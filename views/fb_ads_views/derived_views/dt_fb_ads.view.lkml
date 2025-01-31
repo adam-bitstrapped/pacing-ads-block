@@ -5,8 +5,8 @@ view: dt_fb_ads {
   derived_table: {
 sql:
  {% if "@{FADS_DATASET_NAME}" != "" %}
-    WITH ad_insights AS (SELECT *, GENERATE_UUID() as primary_key  FROM  `looker-marketplace.@{FADS_DATASET_NAME}.AdInsights` )
-      ,  ad_insights_actions AS (SELECT *, GENERATE_UUID() as primary_key  FROM  `looker-marketplace.@{FADS_DATASET_NAME}.AdInsightsActions` )
+    WITH ad_insights AS (SELECT *, GENERATE_UUID() as primary_key  FROM  `@{PROJECT_ID}.@{FADS_DATASET_NAME}.AdInsights` )
+      ,  ad_insights_actions AS (SELECT *, GENERATE_UUID() as primary_key  FROM  `@{PROJECT_ID}.@{FADS_DATASET_NAME}.AdInsightsActions` )
     SELECT
         (TIMESTAMP(ad_insights.__Partitiondate )) AS partition_date_date,
         ad_insights.AdAccountId  AS ad_account_id,
