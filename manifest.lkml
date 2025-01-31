@@ -4,12 +4,12 @@ project_name: "pacing_ads_block"
 ## Required parameters ##
 
 constant: CONNECTION_NAME {
- value: "bq-looker-marketplace"
+ value: "aaron-playground_bigquery"
  export: override_required
 }
 
 constant: PROJECT_ID {
-  value: "your-project-id"
+  value: "aaron-playground-443817"
   export: override_required
 }
 ### For tracking Goals
@@ -21,17 +21,17 @@ constant: SHEETS_CAMPAIGN_TABLE {
 ## Leave the value empty (value:"") if you're not using the source, otherwise you'll get an error
 
 constant: FADS_DATASET_NAME {
-  value: ""
+  value: "mmm_fb_demo"
   export: override_optional
 }
 
 constant: GADS_DATASET_NAME {
-  value: ""
+  value: "mmm_goog_demo"
   export: override_optional
 }
 
 constant: GADS_CUSTOMER_ID {
-  value: ""
+  value: "552395613"
   export: override_optional
 }
 
