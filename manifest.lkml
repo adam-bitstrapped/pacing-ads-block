@@ -31,7 +31,7 @@ constant: GADS_DATASET_NAME {
 }
 
 constant: GADS_CUSTOMER_ID {
-  value: "552395613"
+  value: ""
   export: override_optional
 }
 
