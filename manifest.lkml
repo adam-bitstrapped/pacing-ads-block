@@ -14,7 +14,7 @@ constant: PROJECT_ID {
 }
 ### For tracking Goals
 constant: SHEETS_CAMPAIGN_TABLE {
-  value: "campaigns_information"
+  value: "" # was "campaigns_information"
   export: override_optional
 }
 
