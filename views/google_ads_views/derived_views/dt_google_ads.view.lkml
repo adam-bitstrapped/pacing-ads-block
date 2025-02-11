@@ -6,7 +6,7 @@ view: dt_google_ads {
   sql:
     {% if "@{GADS_DATASET_NAME}" != "" %}
   SELECT
-    (TIMESTAMP(GAds.segments_date )) AS ad_date,
+    (TIMESTAMP(GAds._DATA_DATE )) AS ad_date,
     CAST(GAds.customer_id AS STRING)  AS customer_id,
     google_ads_customer.customer_descriptive_name  AS customer_descriptive_name,
     CAST(GAds.campaign_id AS STRING)  AS campaign_id,
